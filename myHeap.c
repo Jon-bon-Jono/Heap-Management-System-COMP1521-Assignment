@@ -1,6 +1,5 @@
-// COMP1521 18s1 Assignment 2
 // Implementation of heap management system
-// By Jonathan Williams z5162987
+// By Jonathan Williams
 // May 2018
 #include <stdio.h>
 #include <stdlib.h>
@@ -80,6 +79,7 @@ void freeHeap()
 }
 
 // allocate a chunk of memory
+//finds smallested free chunk that can fit size bytes
 void *myMalloc(int size)
 {
    if(size < 0) return NULL;
@@ -153,7 +153,7 @@ void myFree(void *block)
    int block_index = freeListInsert(blockHeader);
    
    
-   //if any free blocks are found to be adjacent to new our block, merge the blocks:
+   //if any free blocks are found to be adjacent to our new block, merge the blocks:
    
    Header* prevFreeHeader = (block_index > 0)? freeList[block_index-1] : NULL;
    Header* nextFreeHeader = (block_index < (nFree-1) )? freeList[block_index+1] : NULL;
