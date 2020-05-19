@@ -1,5 +1,4 @@
-// COMP1521 18s1 Assignment 2
-// myHeap test: sorted list implementation
+// myHeap test: sorted linked list implementation
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -32,7 +31,7 @@ int main(int argc, char *argv[])
    freeHeap();
    return 0;
 }
-
+//insert new element in ordered list
 List insert(List L, int n)
 {
    Node *new = myMalloc(sizeof(Node));

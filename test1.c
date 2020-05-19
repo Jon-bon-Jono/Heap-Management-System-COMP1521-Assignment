@@ -1,4 +1,3 @@
-// COMP1521 18s1 Assignment 2
 // myHeap test: init Heap and dump
 
 #include <stdio.h>

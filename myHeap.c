@@ -197,7 +197,7 @@ int  heapOffset(void *p)
       return p - heapMem;
 }
 
-// dump contents of heap (for testing/debugging)
+// dump contents of heap
 void dumpHeap()
 {
    Addr    curr;

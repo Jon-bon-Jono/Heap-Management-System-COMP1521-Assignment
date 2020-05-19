@@ -1,4 +1,3 @@
-// COMP1521 18s1 Assignment 2
 // myHeap test: read malloc/free ops and do them
 
 #include <stdio.h>
